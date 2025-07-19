@@ -8,7 +8,7 @@ permissions:
    welcome:
    name: Post welcome commen
    runs-on: ubuntu-latest
-    steps:
+     steps:
       - run: gh pr comment "$PR_URL" --body "Welcome to the repository!"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
